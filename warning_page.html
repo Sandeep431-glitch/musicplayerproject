@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- css for style -->
+    <link rel="stylesheet" type="text/css" href="single_playlist_style_sheet.css">
+
+    <!--------to make website more responsive------->
+    <link rel="stylesheet" type="text/css" href="single_playlist_responsiveness.css">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/da2e089c9b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <!-- navigation bar -->
+        <nav class="navbar">
+            <ul class="list">
+
+                <!----left navigation------>
+                <div class="nav-left">
+    
+                    <li><a href="index.html"><img class="logo" src="resources/logo.png" alt=""></a></li>
+                    <li class="company-name"><a href=""><p><b>Ninja</b><br><span>Player</span></p></a></li>
+                    
+                    <!----------search bar------------>
+                    <div class="searchbar-container">
+                        <li><i class="fa-solid fa-magnifying-glass glass"></i></li>
+                        <li><input class="search" type="search" placeholder="Search"></li>
+                        <li><i class="fa-solid fa-microphone mic"></i></li>
+                    </div>
+                </div>
+    
+                <!-----right navigation------->
+                <div class="nav-right">
+                    <li class="home"><a href="index.html">Home</a></li>
+                    <li class="fav"><a href="#">MyList</a></li>
+                    <li class="podcast"><a href="#">Podcast</a></li>
+                    <li class="download-app"><a href="#">Download app</a></li>
+
+                    <!------bell icon----------->
+                    <li><i class="fa-solid fa-bell bell"></i></li>
+
+                    <!---------profile----------->
+                    <li class="profile-picture"><img src="resources/profile_picture.jpg" alt=""></li>
+                </div>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <div class="no_home">
+                    <h1>404 Not Found!!</h1>
+                    <div class="btnn">
+                        <a href="index.html">
+                            <h1>GO BACK</h1>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="active-song-description">
+                <!-- song image -->
+                <div id="song-image">
+                    <img src="resources/playlist/without me.png">
+                </div>
+                <!-- song name and author -->
+                <div class="song-desc">
+                    <div>
+                        Without Me by Halsey
+                    </div>
+                    <div>
+                        Halsey
+                    </div>
+                    <!-- heart icon and ban icon -->
+                </div>
+                <div class="heart-and-ban-icon">
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fas fa-ban"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- these are the main player controls -->
+            <div class="player">
+                <div class="controls">
+                    <div><i class="fas fa-random"></i></div>
+                    <div><i class="fas fa-step-backward"></i></div>
+                    <div><i class="fas fa-pause-circle"></i></div>
+                    <div><i class="fas fa-step-forward"></i></div>
+                    <div><i class="fas fa-redo"></i></div>
+                </div>
+                <!-- this is the slider -->
+                <div id="slider">
+                    <!-- current time -->
+                    <div class="time">
+                        0:00
+                    </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                    </div>
+                    <!-- total time -->
+                    <div class="time">
+                        4:44
+                    </div>
+                </div>
+            </div>
+            <!-- other icons including the volume slider and all -->
+            <div class="extras">
+                <div>
+                    <i class="fas fa-list-ul"></i>
+                </div>
+                <div>
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <div>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="slidecontainer" style="width:30%;">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+                </div>
+                <div>
+                    <i class="fas fa-expand-alt"></i>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <!----------Submitted by Sandeep Ghosh (Sandeep431-glitch)----------->
+
+</html>

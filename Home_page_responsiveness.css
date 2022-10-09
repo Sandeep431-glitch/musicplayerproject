@@ -1,0 +1,354 @@
+/* -------------responsiveness--------------------- */
+
+/*--------------------changes for screen size width below 1150 pixels and above 980 pixels----------------------*/
+
+@media screen and (max-width:1150px) {
+
+    .navbar {
+
+        transform: scale(.8);
+        margin-left: 0;
+        left: 0;
+
+    }
+
+    .aside-right {
+
+        display: none;
+
+    }
+
+    .aside-left {
+
+        transform: scale(1);
+        width: 95%;
+
+    }
+
+    /* ---------------lastest release---------- */
+
+    .card {
+
+        transform: scale(1);
+        margin-right: 20px;
+
+    }
+
+
+}
+
+/*--------------------changes for screen size width below 980 pixels and above 830 pixels----------------------*/
+
+@media screen and (max-width:980px) {
+
+    .section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        height: 239vh;
+
+    }
+
+    .navbar {
+
+        transform: scale(.7);
+        padding: 0;
+        border-left: 0;
+
+    }
+
+    .company-name {
+
+        margin-right: 50px;
+    }
+
+    .searchbar-container {
+
+        width: 214px;
+    }
+
+
+    .aside-left {
+
+        transform: scale(.9);
+
+    }
+
+    .card {
+        margin-left: 30px;
+    }
+
+    .song-description {
+
+        display: none;
+
+    }
+
+    .artist:last-child {
+
+        display: none;
+
+    }
+
+    #stations .station:last-child {
+
+        display: none;
+
+    }
+
+    #stations .station-icon {
+
+        height: 86px;
+        width: 100px;
+        margin-right: 10px;
+
+    }
+
+    .language-content {
+
+        margin-bottom: 30px;
+
+    }
+
+    .language-content p {
+
+        display: none;
+    
+    }
+
+}
+
+/*--------------------changes for screen size width below 830 pixels and above 766 pixels----------------------*/
+
+@media screen and (max-width:830px) {
+
+    .section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        height: 239vh;
+    }
+
+    .navbar {
+
+        transform: scale(.65);
+    }
+    
+
+    .nav-left .company-name {
+        margin-right: 20px;
+        margin-left: 15px;
+    }
+
+    .searchbar-container {
+
+        width: 197px;
+    }
+
+    .nav-left li a {
+
+        font-size: 15px;
+    }
+
+    .nav-right li a {
+
+        font-size: 15px;
+    }
+
+    .extras > div:nth-child(3) {
+
+		display: none;
+
+	}
+
+	.extras > div:nth-child(4) {
+
+		display: none;
+    }
+
+}
+
+/*--------------------changes for screen size width below 766 pixels and above 600 pixels----------------------*/
+
+@media screen and (max-width:766px) {
+    
+    .nav-left li a {
+        
+        font-size: 13px;
+    }
+
+    .nav-right li a {
+
+        font-size: 13px;
+    }
+
+    .searchbar-container {
+
+        width: 115px;
+    }
+
+    .aside-left {
+
+        transform: scale(1);
+        width: 100%;
+
+    }
+
+    .section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        height: 239vh;
+
+    }
+
+    .playlist:last-child, .artist:last-child , 
+    #stations .station:last-child, #stations .station:first-child,
+     #stations .station-icon, .latest-release .card:last-child, 
+     .latest-release .card:first-child {
+
+        display: none;
+
+    }
+
+    /* .active-song-description {
+
+        display: none;
+
+    } */
+
+    .card .options {
+
+        margin-left: 22px;
+
+    }
+
+    .card {
+        justify-content: space-between;
+    }
+
+    .music-themes .outer-div .inner-div span {
+
+        transform: scale(.8)
+
+    }
+
+    .extras > div:nth-child(3) {
+
+		display: none;
+
+	}
+
+	.extras > div:nth-child(4) {
+
+		display: none;
+
+	}
+
+}
+
+/*--------------------changes for screen size width below 600 pixels----------------------*/
+
+@media screen and (max-width:600px) {
+    
+    .navbar {
+        
+        transform: scale(.6);
+        margin: 0;
+        padding: 0;
+        nav-left: 0;
+    }
+
+    .nav-left .logo {
+
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .popular-artist .artist:nth-child(4n), .popular-artist .artist:first-child,
+    .list .nav-left li:nth-child(3n), .language-hindi .song:nth-child(3n), 
+    .music-themes .outer-div:last-child, .language-english .song:nth-child(3n), 
+    .station:nth-child(3n) {
+        
+        display: none;
+    }
+
+    .nav-left .company-name {
+
+        margin-right: 10px;
+
+    }
+
+    .language-english, .language-hindi {
+
+        transform: scale(.8);
+
+    }
+
+    .music-themes .outer-div .inner-div span {
+
+        transform: scale(.6);
+
+    }
+
+    .music-themes .outer-div .inner-div {
+
+        transform: scale(.9);
+
+    }
+
+    #stations .station {
+
+        transform: scale(1.1);
+
+    }
+
+    #stations .station:hover {
+
+        transform: scale(.9);
+
+    }
+
+    .top-playlist:hover {
+        transform: scale(.8);
+        animation: 1s ease-in-out alternate;
+    }
+
+    .playlist {
+
+        transform: scale(1);
+
+    }
+
+    .playlist:hover {
+
+        transform: scale(1.2);
+    }
+
+    .card:nth-child(2n) {
+
+        display: none;
+    }
+
+    .latest-release {
+
+        height: 137px;
+    }
+
+
+    .music-themes {
+
+        height: 141px;
+
+    }
+
+}
+
+/*----------Submitted by Sandeep Ghosh (Sandeep431-glitch)-----------*/

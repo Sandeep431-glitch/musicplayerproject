@@ -1,0 +1,1042 @@
+:root {
+	--jumbotron-color: #141b41;
+	--playlist-items-background-color-on-hover: #2e3249;
+}
+
+
+/*-----------making scroll bar invisible---------*/
+
+::-webkit-scrollbar{
+
+    display: none;
+
+}
+
+/*----------body----------*/
+
+body {
+
+    background-image: url(resources/background_image/background_image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif;
+    color: white;
+
+  }
+
+/*---------removing text decoration from all the a tags----------*/
+
+  * a {
+
+    text-decoration: none;
+
+  }
+
+  /*-----navigation bar------ */
+
+.navbar {
+
+    margin: 10px;
+
+}
+
+.list {
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*-------------------left navigation bar---------------------------*/
+
+.nav-left {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.list li a {
+
+    text-decoration: none;
+    font-size: 23px;
+
+}
+
+.nav-left li a {
+
+    color: white;
+
+}
+
+.nav-left li a img {
+
+    margin-top: 25px;
+    margin-left: 25px;
+
+}
+
+.nav-left .company-name {
+
+    margin-right: 25px;
+    margin-left: 25px;
+    
+}
+
+.nav-left .company-name a span {
+
+    font-size: medium;
+
+}
+
+.list .logo {
+
+    height: 75px;
+
+}
+
+/*---------------------------right navigation bar---------------------------*/
+
+.nav-right {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.nav-right li {
+
+    margin-left: 33px;
+
+}
+
+.nav-right li a {
+
+    color: white;
+    font-size: medium;
+
+}
+
+/*--------------------------profile picture---------------------------------*/
+
+.nav-right .profile-picture {
+
+    margin-left: 12px;
+    margin-right: 20px;
+}
+
+.nav-right .profile-picture img {
+
+    width: 45px;
+	height: 45px;
+	border-radius: 100%;
+
+}
+
+.nav-right .fa-solid {
+
+    color: white;
+
+}
+
+/* ----------------------------search box---------------------------------- */
+
+.searchbar-container {
+
+    border: none;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    height: 30px;
+    border-radius: 55px;
+    overflow: hidden;
+
+}
+
+.nav-left .search {
+
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    margin-left: 35px;
+
+}
+
+.nav-left .search:focus {
+
+    outline: none;
+
+}
+
+/*--------------mic icon----------------*/
+.nav-left .mic {
+
+    color: black;
+    margin-left: 5px;
+    margin-right: 11px;
+
+}
+
+.nav-left .search::placeholder {
+
+    border: none;
+    font-size: 18px;
+    position: relative;
+    left: 12%;
+
+}
+
+.nav-left .glass {
+
+    color: black;
+    margin-left: 12px;
+    position: relative;
+    left: 14%;
+
+}
+
+/*---------------bell icon--------------*/
+
+.nav-right .bell {
+
+    height: 14px;
+
+}
+
+/*------------------------------------------main-----------------------------------------*/
+
+main {
+    top: 15%;
+	width: 100%;
+    height: 200vh;
+	padding: 0% 3%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	transition: all ease-in-out 1s;
+
+}
+
+/*---------------------aside section----------------------------*/
+
+.aside {
+
+	display: inline-block;
+	overflow: hidden;
+
+}
+/*------------------------------------left aside-------------------------------------*/
+.aside-left {
+
+	width: 70%;
+	height: 150vh;
+	overflow: scroll;
+    z-index: -1;
+
+}
+
+/*---------------------------------jumbotron------------------------------------*/
+
+.jumbotron {
+
+	height: 23vw;
+	width: 100%;
+	margin-top: 12px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+    background-image: linear-gradient(
+		0deg,
+	    rgba(255,255,255, 0.3) -100%,
+		rgba(0, 0, 0, 0.911)
+	    ); 
+	margin-bottom: 40px;
+	position: relative;
+
+}
+
+/*----------------------image inside jumbotron--------------------------*/
+
+.jumbotron-image {
+
+	height: 20vw;
+	width: 20vw;
+    background-image: linear-gradient(
+		0deg,
+	    rgba(255,255,255, 0.3) -50%,
+		rgba(0, 0, 0, 0)
+	    ), 
+		url("resources/playlist/whatever it takes.jpg");
+	background-size: cover;
+
+}
+
+/*--------------------------right section of jumbotron-----------------------*/
+
+.jumbotron-detail {
+
+	width: 67%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+    margin-bottom: 12px;
+
+}
+
+/*---------------------description and action of left aside-------------------*/
+
+.descriptive-part, .action-part {
+
+	width: 100%;
+	height: max-content;
+
+}
+
+/*----------------------song name and followers---------------------------*/
+
+.song-name-main, .followers {
+
+	display: inline-block;
+
+}
+
+/*--------------------song name heading properties------------------------*/
+
+.song-name-main h1 {
+
+	font-size: 1.5vw;
+    margin-top: 2vw;
+
+}
+
+/*-------------------------- total follower--------------------------*/
+
+.followers {
+
+	position: absolute;
+	right: 10%;
+	top: 5%;
+
+}
+
+.followers, .author {
+
+	font-size: 1vw;
+
+}
+
+.desc {
+
+	font-size: 0.9vw;
+}
+
+.action-part p {
+
+	font-size: 1vw;
+
+}
+
+/*-------------button----------------*/
+
+.btns > button {
+
+	border: 2px solid #009688;
+	height: 3vw;
+	width: 7vw;
+	color: white;
+	font-size: 1.3vw;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+
+}
+
+/*-------------------play button--------------------*/
+
+.btns > button:nth-child(1) {
+
+	background-image: linear-gradient(-19deg, darkcyan 0%, darkcyan 100%);
+
+}
+
+/*---------------------------follow button------------------------*/
+
+.btns > button:nth-child(2) {
+
+    background-image: linear-gradient(-19deg, darkcyan 0%, darkcyan 100%);
+
+}
+
+/*--------------play list items----------------*/
+
+.playlist-item-section {
+
+    display: flexbox;
+
+}
+
+.playlist-item {
+
+	box-sizing: border-box;	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+
+    background-image: linear-gradient(
+		0deg,
+	    rgba(255,255,255, 0.3) -50%,
+		rgba(0, 0, 0, 0)
+	);
+
+}
+
+
+/*--------------------------playlist item hovering effect--------------------*/
+
+.playlist-item:hover {
+
+	background-color: var(--playlist-items-background-color-on-hover);
+
+}
+
+/*-----------------------------left part if the playlist item-----------------------------------*/
+
+.left {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 30%;
+	height: 100%;
+	padding: 0% 1%;
+
+}
+
+/*--------center part----------*/
+
+.center {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: min-content;
+	height: 100%;
+
+}
+
+/*---------right part-----------*/
+
+.right {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 100%;
+	padding-right: 2%;
+
+}
+
+/*---------------contents------------*/
+
+.left > div:nth-child(2) {
+
+	height: 80%;
+	min-width: 50px;
+	max-width: 50px;
+	margin: 0px 12% 0px 12%;
+	position: relative;
+
+}
+
+.left > div:nth-child(2) img {
+
+	width: 100%;
+	height: 100%;
+
+}
+
+.left > div:nth-child(3) p {
+
+	color: rgb(185, 185, 185);
+
+}
+
+/*----------play button effect--------*/
+
+.play-btn {
+
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	opacity: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: all ease-in-out 0.1s;
+
+}
+
+/*--------play button hover effects-----------*/
+
+.play-btn:hover {
+
+	opacity: 0.7;
+
+}
+
+/* adjusting fonts in the playlist items  */
+
+.left div p {
+
+	font-size: 14px;
+
+}
+
+.center {
+
+	font-size: 12px;
+	color: rgb(185, 185, 185);
+
+}
+
+.right {
+
+	color: rgb(185, 185, 185);
+
+}
+
+.right div:nth-child(2) {
+
+	margin-left: 27%;
+
+}
+
+/*---------------------------------right aside----------------------------------*/
+
+.aside-right{
+
+	width: 28%;
+	height: 85vh;
+	z-index: 2;
+
+}
+
+/*-------------------------------------------------------similar artists----------------------------------------------*/
+
+.similar-artists-items {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+
+}
+
+/*-------------creating transition and display flex for similar artists----------------*/
+
+.similar-artists-content {
+
+    flex: 0 0 auto;
+    height: 300px;
+	justify-content: space-around;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scale(.9);
+    animation: 1s ease-in-out alternate;
+    
+}
+
+/*---------------------------components for similar artists-----------------------------*/
+
+.similar-artists-content > div {
+
+	height: 100px;
+	width: 100%;
+	margin: 5px 0px;
+}
+
+/*----------------- cards for general components of similar artists--------------*/
+
+.card {
+
+	display: flex;
+	flex-direction: row;
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.card:hover {
+
+	box-shadow: 0px 0px 2px 1px white;
+    transition: 1s;
+    transform: scale(1.2);
+    z-index: 10;
+
+}
+
+.card img {
+
+	width: 100px;
+	height: 100px;
+	z-index: 1;
+
+}
+
+/*-----------------hovering play button----------------*/
+
+.play-button {
+
+	width: 100%;
+	height: 86%;
+	position: relative;
+	top: -105%;
+	color: white;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 0px;
+	padding-top: 15%;
+	text-align: center;
+	z-index: 2;
+	transition: all ease-in-out 0.1s;
+
+}
+
+.play-button i {
+
+	padding-top: 45%;
+
+}
+
+.play-button:hover {
+
+	color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.song-description {
+	
+    margin: auto 10%;
+
+}
+
+.options {
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap-reverse;
+	text-align: right;
+	margin-left: auto;
+	margin-right: 2%;
+	margin-top: 2%;
+
+}
+
+/*------------------recently played-------------------*/
+
+.recent-list {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+
+}
+
+/*---------recently playlist content----------------*/
+
+.recently-played-items {
+
+    flex: 0 0 auto;
+    height: 400px;
+    width: 90%;
+	justify-content: space-between;
+    cursor: pointer;
+
+}
+
+/*----------left content in recently playlist-----------*/
+
+.left-content {
+
+	display: flex;
+	height: 100%;
+	width: 70%;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.left-content > div:nth-child(3) {
+
+	margin-left: 12px;
+	width: 50%;
+	word-wrap: break-word;
+
+}
+
+/*-------------heart icon in recently playlist----------------*/
+
+.right-content {
+
+	position: relative;
+	left: 90%;
+    bottom: 60%;
+    height: 30px;
+    width: 50px;
+    align-items: center;
+
+}
+
+.right-content i {
+
+	transition: all ease-in-out 0.1s;
+
+}
+
+.right-content i:hover {
+
+	color: red;
+
+}
+
+.playlist-item {
+
+	width: 90%;
+	height: auto;
+	padding: 0px 1%;
+	box-sizing: border-box;
+	margin: 1%;
+	
+}
+
+/*-----------------animation for heart icon---------------*/
+
+@keyframes glowing-heart {
+
+	0% {
+		color: yellow;
+	}
+	50% {
+		color: orangered;
+	}
+	100% {
+		color: red;
+	}
+
+}
+
+/*----------hover effect on heart icon--------*/
+
+.playlist-item:hover .fa-heart {
+
+	animation-name: glowing-heart;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-duration: 1s;
+
+}
+
+/*---------playlist items hovering-----------*/
+
+.playlist-item:hover {
+
+	box-shadow: 0px 0px 2px 1px white;
+
+}
+
+/*-------playlist item image size------*/
+
+.playlist-item img {
+
+	width: 80px;
+	height: 80px;
+
+}
+
+/*--------this will cover the playlist image. this can be called as a container for half of the items in the left part-----*/
+
+.coverer {
+
+	width: 80px;
+	height: 80px;
+
+}
+
+/*---------------------footer------------------------*/
+
+footer {
+
+	position: fixed;
+    color: black;
+	bottom: 0px;
+	width: 100%;
+	height: 70px;
+    left: 0%;
+    right: 0%;
+	background-image: linear-gradient(red, grey);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: wrap;
+	padding: 0%;
+	box-sizing: border-box;
+	z-index: 7;
+
+}
+
+.active-song-description {
+	
+	height: 90%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+/*---------image for current playing song------*/
+
+#song-image {
+
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+
+}
+
+/*-------------current song image------------*/
+
+#song-image img {
+
+	width: 100%;
+	height: 100%;
+
+}
+
+/* heart and ban icon */
+
+.heart-and-ban-icon {
+
+	height: 100%;
+	padding-top: 4%;
+
+}
+
+/*------------song decscription-------------*/
+
+.song-desc {
+
+	margin-right: 1%;
+	margin-left: 1%;
+
+}
+
+/*-----------song name---------*/
+
+.song-desc div:nth-child(1) {
+
+	font-size: 14px;
+
+}
+
+/*---------song author-------*/
+
+.song-desc div:nth-child(2) {
+
+	font-size: 12px;
+
+}
+
+/*----------player section of the footer-----------*/
+
+.player {
+
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+
+}
+
+/*--------------controls is the container for all the center controls of the player----------*/
+
+.controls {
+
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+
+}
+
+/*-------------this is the song-duration slider-------------*/
+
+#slider {
+
+	width: 100%;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+
+}
+
+.time {
+
+	margin: 0px 10px;
+
+}
+
+/*-----------adjusting the slider for better visuals-----------*/
+
+.slidecontainer {
+
+	width: 100%;
+
+}
+
+/*------------for audio and main center player-----------*/
+
+.slider {
+
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+
+}
+
+/*-----------hover effect for the slider----------*/
+
+.slider:hover {
+
+	opacity: 1;
+
+}
+
+/*------------these are for adjusting the dimensions and default styling of the long-slider------------*/
+
+.slider::-webkit-slider-thumb {
+
+	-webkit-appearance: none;
+	appearance: none;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background: #007bff;
+	cursor: pointer;
+
+}
+
+/*--------this is the circular thumb, which can be moved across the div--------*/
+
+.slider::-moz-range-thumb {
+
+	width: 25px;
+	height: 25px;
+	background: #4caf50;
+	cursor: pointer;
+
+}
+
+/*---------this contains the extra icons and slider for volume-----*/
+
+.extras {
+
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+/*------------------CSS for warning page-----------------*/
+  .no_home {
+
+	position: relative;
+	width: 100%;
+	max-width: 400px;
+
+  }
+  
+  .no_home .btnn {
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-image: linear-gradient(
+		0deg,
+	    rgba(0, 0, 0, 0) -95%,
+		rgba(236, 12, 12, 0.753) 95%
+		
+	);
+	color: white;
+	font-size: 16px;
+	padding: 16px 30px;
+	border: #141b41;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+
+  }
+  
+  .no_home .btnn:hover {
+
+	background-color: black;
+	color: white;
+
+  }
+
+  .no_home .btnn:active {
+	background-image: linear-gradient(
+		0deg,
+	    rgba(255,255,255, 0.3) -50%,
+		rgba(0, 0, 0, 0)
+	);
+	box-shadow: 0 5px #666;
+  }
+
+  /*----------Submitted by Sandeep Ghosh (Sandeep431-glitch)-----------*/

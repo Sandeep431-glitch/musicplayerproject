@@ -1,0 +1,228 @@
+
+/*--------------changes for screen size width below 1050 pixel and above 980 pixel----------------*/
+
+@media screen and (max-width:1150px) {
+
+    .navbar {
+
+        transform: scale(.8);
+        margin-left: 0;
+        left: 0;
+
+    }
+
+    .aside-right {
+
+        display: none;
+
+    }
+
+    .aside-left {
+
+        transform: scale(1);
+        width: 95%;
+
+    }
+
+    .card {
+
+        transform: scale(1);
+        margin-right: 20px;
+
+    }
+
+}
+
+/*------------------changes for screen size width below 980 pixels and above 830 pixels-------------------*/
+
+@media screen and (max-width:980px) {
+
+    .section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        height: 239vh;
+
+    }
+
+    .navbar {
+
+        transform: scale(.7);
+        padding: 0;
+        border-left: 0;
+
+    }
+
+    .company-name {
+
+        margin-right: 50px;
+    }
+
+    .searchbar-container {
+
+        width: 214px;
+    }
+
+
+    .aside-left {
+
+        transform: scale(.9);
+
+    }
+
+    .card {
+        margin-left: 30px;
+    }
+
+    .song-description {
+
+        display: none;
+
+    }
+
+    .artist:last-child {
+
+        display: none;
+
+    }
+
+    .language-content {
+
+        margin-bottom: 30px;
+
+    }
+
+    .language-content p {
+
+        display: none;
+    
+    }
+
+
+}
+
+/*---------------------changes for screen size width below 830 pixels and above 766 pixels---------------------*/
+
+@media screen and (max-width:830px) {
+
+    .section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        height: 239vh;
+    }
+
+    .navbar {
+
+        transform: scale(.65);
+    }
+    
+
+    .nav-left .company-name {
+        margin-right: 20px;
+        margin-left: 15px;
+    }
+
+    .searchbar-container {
+
+        width: 197px;
+    }
+
+    .nav-left li a {
+
+        font-size: 15px;
+    }
+
+    .nav-right li a {
+
+        font-size: 15px;
+    }
+
+    .extras > div:nth-child(3) {
+
+		display: none;
+
+	}
+
+	.extras > div:nth-child(4) {
+
+		display: none;
+    }
+
+}
+
+/*--------------------changes for screen size width below 766 pixels and above 600 pixels----------------------*/
+
+@media screen and (max-width:766px) {
+
+    .nav-left li a {
+        
+        font-size: 13px;
+    }
+
+    .nav-right li a {
+
+        font-size: 13px;
+    }
+
+    .searchbar-container {
+
+        width: 115px;
+    }
+
+    .aside-left {
+
+        transform: scale(1);
+        width: 100%;
+
+    }
+
+    .section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        height: 239vh;
+
+    }
+
+    .card {
+        justify-content: space-between;
+    }
+
+
+}
+
+/*---------------------changes for screen size width below 600 pixels-----------------------*/
+
+@media screen and (max-width:600px) {
+
+    .navbar {
+        
+        transform: scale(.6);
+        margin: 0;
+        padding: 0;
+        nav-left: 0;
+    }
+
+    .nav-left .logo {
+
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .playlist-item .center {
+        
+        display: none;
+        
+    }
+
+}
+
+/*----------Submitted by Sandeep Ghosh (Sandeep431-glitch)-----------*/
